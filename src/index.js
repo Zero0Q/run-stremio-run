@@ -19,10 +19,10 @@ app.set('views', path.join(PUBLIC_PATH, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('/', async (req, res) => {
-  const stremioLocalURL = 'https://web.stremio.com/?streamingServer=http%3A%2F%2Flocalhost%3A11470#/'
+  const stremioLocalURL = 'https://web.stremio.com/?streamingServer=http%3A%2F%2F180.150.124.185%3A11470#/'
   return res.render('index', { stremioLocalURL })
 })
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`)
+  console.log(`Server is running on http://180.150.124.185:${PORT}`)
 })
